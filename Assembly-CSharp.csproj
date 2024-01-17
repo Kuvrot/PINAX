@@ -64,6 +64,7 @@
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_DissolveOverTime.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
     <Compile Include="Assets\Scripts\Options.cs" />
+    <Compile Include="Assets\SFX\SFX_Player.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
     <Compile Include="Assets\Animations\UI\WritingAnimation.cs" />
     <Compile Include="Assets\Scripts\BuildSpawner.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Table.cs" />
-    <Compile Include="Assets\SFX\SFX_Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Edge Detection.shader" />
