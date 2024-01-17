@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Button_Text : MonoBehaviour
 {
 
+    [TextArea(3,150)]
     public string[] text = new string[2];
 
     // Start is called before the first frame update

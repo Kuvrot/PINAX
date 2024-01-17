@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if (!gameStarted)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.anyKeyDown)
             {
                 gameStarted = true;
                 ObstacleSpawner.SetActive(true);
@@ -78,13 +78,15 @@ public class GameManager : MonoBehaviour
 
             if (UI_Initialized)
             {
-                UI_Score.GetComponent<Text>().text = "Score: " + score.ToString("F00");
+                UI_Score.GetComponent<Text>().text = "score: " + score.ToString("F00");
+                
+                
 
                 switch (HP)
                 {
                     case 2: UI_HP.text = "HP: ##"; break;
                     case 1: UI_HP.text = "HP: #"; break;
-                    case 0: UI_HP.text = "HP: "; particles[1].Play(); Player.GetComponent<ShipController>().ship.GetComponentInChildren<MeshRenderer>().gameObject.SetActive(false); StartCoroutine(DeathTimer()); break;
+                    case 0: UI_HP.text = "HP: "; StartCoroutine(DeathTimer()); break;
                 }
             }
 
@@ -94,6 +96,20 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
+        //Cheats
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Clock = 280;
+            score = 43;
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(1);
+        }
+
+
 
 
     }
@@ -123,6 +139,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DeathTimer() //wait a few seconds until the scene restarts after death
     {
+
+        particles[1].Play();
+        Player.GetComponent<ShipController>().ship.GetComponentInChildren<MeshRenderer>().enabled = false;
+           
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         StopAllCoroutines();

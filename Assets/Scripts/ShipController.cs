@@ -27,15 +27,15 @@ public class ShipController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Joystick1Button6))
         {
 
             StartCoroutine(InputCoolDown(-1));
 
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
 
             StartCoroutine(InputCoolDown(1));
