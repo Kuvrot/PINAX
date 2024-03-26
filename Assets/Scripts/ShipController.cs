@@ -77,17 +77,14 @@ public class ShipController : MonoBehaviour
 
         if (canMove)
         {
-
             if (dir == -1)
             {
-                
                 anim.SetTrigger("left");
                 yield return new WaitForSeconds(0.1f);
                 if (currentPosition > 0)
                 {
                     currentPosition--;
                 }
-
             }
             else if (dir == 1)
             {
@@ -97,7 +94,6 @@ public class ShipController : MonoBehaviour
                 {
                     currentPosition++;
                 }
-
             }
 
             canMove = false;
