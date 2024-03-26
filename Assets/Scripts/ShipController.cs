@@ -23,6 +23,7 @@ public class ShipController : MonoBehaviour
     void Start()
     {
         anim = ship.GetComponent<Animator>();
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -32,13 +33,13 @@ public class ShipController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Joystick1Button6))
         {
 
-            StartCoroutine(InputCoolDown(-1));
+            Move(-1);
 
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
 
-            StartCoroutine(InputCoolDown(1));
+            Move(1);
 
         }
 
@@ -110,4 +111,12 @@ public class ShipController : MonoBehaviour
        
         StopAllCoroutines();
     }
+
+    public void Move(int dir)
+    {
+
+        StartCoroutine(InputCoolDown(dir));
+
+    }
+
 }

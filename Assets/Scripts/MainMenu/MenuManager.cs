@@ -22,7 +22,9 @@ public class MenuManager : MonoBehaviour
         {
             obj.SetActive(false);
         }
-        
+
+        Cursor.visible = true;
+
     }
 
     // Update is called once per frame
