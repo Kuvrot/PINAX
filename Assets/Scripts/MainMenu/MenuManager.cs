@@ -90,7 +90,7 @@ public class MenuManager : MonoBehaviour
         switch (n)
         {
             case 0:
-                Screen.SetResolution(1366 , 768 , fullScreen.isOn); break;
+                Screen.SetResolution(1280 , 720, fullScreen.isOn); break;
             case 1:
                 Screen.SetResolution(1920, 1080, fullScreen.isOn); break;
 
