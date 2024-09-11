@@ -13,6 +13,8 @@ public class MenuManager : MonoBehaviour
     public Toggle fullScreen;
     public GameObject[] screens;
 
+    public bool phoneMode = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,10 @@ public class MenuManager : MonoBehaviour
 
         Cursor.visible = true;
 
+        if (phoneMode)
+        {
+            Screen.SetResolution(915 , 412 , true);
+        }
     }
 
     // Update is called once per frame
