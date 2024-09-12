@@ -10,13 +10,14 @@ Material:
   m_Name: ObstacleMaterial
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
   m_ValidKeywords:
-  - GLOWTEX_ON
+  - BLURISHD_ON
   - GLOW_ON
   - HOLOGRAM_ON
-  - OUTBASEPIXELPERF_ON
+  - MOTIONBLUR_ON
   - OUTBASE_ON
   m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
+  - _BLURHD_ON
   - _GLOSSYREFLECTIONS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -121,7 +122,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.179
+    - _Alpha: 0.741
     - _AlphaCutoffValue: 0.25
     - _AlphaOutlineBlend: 1
     - _AlphaOutlineGlow: 5
@@ -131,9 +132,9 @@ Material:
     - _Amplitude: 1
     - _BillboardY: 0
     - _BlurAmount: 0
-    - _BlurHD: 0
-    - _BlurIntensity: 10
-    - _Brightness: 0
+    - _BlurHD: 1
+    - _BlurIntensity: 36.2
+    - _Brightness: 1
     - _BumpScale: 1
     - _ChromAberrAlpha: 0.4
     - _ChromAberrAmount: 1
@@ -152,7 +153,7 @@ Material:
     - _ColorSwapBlueLuminosity: 0.5
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
-    - _Contrast: 1
+    - _Contrast: 0.85
     - _Cull: 0
     - _CullingOption: 0
     - _Cutoff: 0.5
@@ -162,24 +163,24 @@ Material:
     - _DistortTexYSpeed: 5
     - _DstBlend: 10
     - _EditorDrawers: 7
-    - _FadeAmount: -0.1
-    - _FadeBurnGlow: 2
-    - _FadeBurnTransition: 0.075
-    - _FadeBurnWidth: 0.025
+    - _FadeAmount: 0.416
+    - _FadeBurnGlow: 28
+    - _FadeBurnTransition: 0.049
+    - _FadeBurnWidth: 0.413
     - _FishEyeUvAmount: 0.35
     - _FlickerAlpha: 0
     - _FlickerFreq: 0.2
     - _FlickerPercent: 0.05
-    - _GhostBlend: 1
-    - _GhostColorBoost: 1
+    - _GhostBlend: 0.447
+    - _GhostColorBoost: 2.52
     - _GhostTransparency: 0
     - _GlitchAmount: 0.1
     - _GlitchSize: 1
     - _GlossMapScale: 1
     - _Glossiness: 1
     - _GlossyReflections: 0
-    - _Glow: 42.3
-    - _GlowGlobal: 100
+    - _Glow: 67.8
+    - _GlowGlobal: 60.4
     - _GradBlend: 1
     - _GradBoostX: 1.2
     - _GradBoostY: 1.2
@@ -196,25 +197,25 @@ Material:
     - _HandDrawnSpeed: 5
     - _HitEffectBlend: 1
     - _HitEffectGlow: 5
-    - _HologramBlend: 1
+    - _HologramBlend: 0.791
     - _HologramMaxAlpha: 0.75
-    - _HologramMinAlpha: 0.1
-    - _HologramStripesAmount: 0.1
-    - _HologramStripesSpeed: 4.5
-    - _HologramUnmodAmount: 0
+    - _HologramMinAlpha: 0.106
+    - _HologramStripesAmount: 0.111
+    - _HologramStripesSpeed: 7.7
+    - _HologramUnmodAmount: 0.04
     - _HsvBright: 1
     - _HsvSaturation: 1
     - _HsvShift: 180
     - _InnerOutlineAlpha: 1
-    - _InnerOutlineGlow: 4
-    - _InnerOutlineThickness: 1
+    - _InnerOutlineGlow: 84
+    - _InnerOutlineThickness: 1.29
     - _MaxXUV: 1
     - _MaxYUV: 1
     - _Metallic: 0
     - _MinXUV: 0
     - _MinYUV: 0
     - _Mode: 3
-    - _MotionBlurAngle: 0.1
+    - _MotionBlurAngle: 0.07
     - _MotionBlurDist: 1.25
     - _MyDstMode: 10
     - _MySrcMode: 5
@@ -224,12 +225,12 @@ Material:
     - _OffsetUvY: 0
     - _OnlyInnerOutline: 0
     - _OnlyOutline: 0
-    - _OutlineAlpha: 0.595
+    - _OutlineAlpha: 0.617
     - _OutlineDistortAmount: 0.5
     - _OutlineDistortTexXSpeed: 5
     - _OutlineDistortTexYSpeed: 5
     - _OutlineGlow: 100
-    - _OutlinePixelWidth: 3.73
+    - _OutlinePixelWidth: 4.18
     - _OutlineTexXSpeed: 10
     - _OutlineTexYSpeed: 0
     - _OutlineWidth: 0.07
@@ -237,7 +238,7 @@ Material:
     - _OverlayGlow: 1
     - _Parallax: 0.02
     - _PinchUvAmount: 0.35
-    - _PixelateSize: 32
+    - _PixelateSize: 56
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
@@ -252,10 +253,10 @@ Material:
     - _ShakeUvSpeed: 2.5
     - _ShakeUvX: 1.5
     - _ShakeUvY: 1
-    - _ShineGlow: 1
-    - _ShineLocation: 0.5
+    - _ShineGlow: 8.6
+    - _ShineLocation: 0.475
     - _ShineRotate: 0
-    - _ShineWidth: 0.1
+    - _ShineWidth: 0.18
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -292,7 +293,7 @@ Material:
     - _Emission1: {r: 2.56, g: 0, b: 0, a: 1}
     - _Emission2: {r: 0, g: 1.95, b: 2.52, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
+    - _FadeBurnColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlowDirection: {r: 1, g: 0, b: 0, a: 0}
     - _GlowColor: {r: 1, g: 0, b: 0.96657753, a: 1}
     - _GradBotLeftCol: {r: 0, g: 0, b: 1, a: 1}
