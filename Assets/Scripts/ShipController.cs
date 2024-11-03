@@ -11,6 +11,11 @@ public class ShipController : MonoBehaviour
     public Transform[] positions;
     public GameObject ship;
 
+    [Header("Spaceship selector")]
+    public int shipIndex = 0;
+    public GameObject[] shipViewModels;
+
+
     // up and down animation
     protected bool canMove = true;
     protected float interpolation = 0f;
@@ -24,6 +29,14 @@ public class ShipController : MonoBehaviour
     {
         anim = ship.GetComponent<Animator>();
         Cursor.visible = false;
+        
+        foreach (GameObject spaceship in shipViewModels)
+        {
+            spaceship.SetActive(false);
+        }
+
+        shipViewModels[shipIndex].SetActive(true);
+
     }
 
     // Update is called once per frame

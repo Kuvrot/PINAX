@@ -4406,8 +4406,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - SELECCIONAR TABLAS
-  - SELECT TABLES
+  - "MODO PR\xC1CTICA"
+  - PRACTICE MODE
 --- !u!114 &1490886264
 MonoBehaviour:
   m_ObjectHideFlags: 0
