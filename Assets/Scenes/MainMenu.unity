@@ -1782,8 +1782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - "MODO LIBRE  \n(TODAS LAS TABLAS)"
-  - "FREE MODE \n(ALL TABLES)"
+  - JUGAR
+  - PLAY
 --- !u!114 &595670173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,7 +1817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MODO LIBRE \n(TODAS LAS TABLAS)"
+  m_Text: JUGAR
 --- !u!222 &595670174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4441,7 +4441,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SELECCIONAR TABLAS
+  m_Text: "MODO PR\xC1CTICA"
 --- !u!222 &1490886265
 CanvasRenderer:
   m_ObjectHideFlags: 0
