@@ -15,7 +15,7 @@ public class MenuManager : MonoBehaviour
 
     public bool phoneMode = false;
 
-    public int playerMoney = 0;
+    public int playerMoney = 1;
     public Text playerMoneyUI;
 
     // Start is called before the first frame update
@@ -49,7 +49,10 @@ public class MenuManager : MonoBehaviour
             LanguageChange(1);
         }
 
-        playerMoneyUI.text = playerMoney.ToString();
+        if (playerMoneyUI != null)
+        {
+            playerMoneyUI.text = "$" + playerMoney.ToString();
+        }
 
     }
 
