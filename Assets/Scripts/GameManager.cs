@@ -143,7 +143,12 @@ public class GameManager : MonoBehaviour
         particles[1].Play();
         Player.GetComponent<ShipController>().ship.GetComponentInChildren<MeshRenderer>().enabled = false;   
         yield return new WaitForSeconds(5);
-        PlayerPrefs.SetInt("Score" , score);
+        
+        if (!fixedTable)
+        {
+            PlayerPrefs.SetInt("Score", score);
+        }
+
         SceneManager.LoadScene("MainMenu");
         StopAllCoroutines();
 
