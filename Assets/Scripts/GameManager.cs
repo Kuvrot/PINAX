@@ -89,7 +89,6 @@ public class GameManager : MonoBehaviour
                     case 0: UI_HP.text = "HP: "; StartCoroutine(DeathTimer()); break;
                 }
             }
-
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -108,33 +107,24 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
-
-
-
-
     }
 
     void UI_Setup()
     {
         UI_Score.GetComponent<WritingAnimation>().msg = "Score: " + score.ToString("F00");
         UI_HP.GetComponent<WritingAnimation>().msg = "HP: ###";
-        StartCoroutine(Timer());
-        
+        StartCoroutine(Timer());   
     }
 
     IEnumerator Timer ()
     {
-
         yield return new WaitForSeconds(2.5f);
-        UI_Initialized = true;
-
+        UI_Initialized = true
     }
 
     public void CameraShake()
     {
-
         Player.GetComponent<Animator>().SetTrigger("shake");
-
     }
 
     IEnumerator DeathTimer() //wait a few seconds until the scene restarts after death
@@ -151,7 +141,5 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene("MainMenu");
         StopAllCoroutines();
-
-
     }
 }
