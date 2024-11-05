@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
     IEnumerator Timer ()
     {
         yield return new WaitForSeconds(2.5f);
-        UI_Initialized = true
+        UI_Initialized = true;
     }
 
     public void CameraShake()
