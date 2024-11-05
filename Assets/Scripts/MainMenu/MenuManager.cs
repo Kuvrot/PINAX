@@ -35,7 +35,10 @@ public class MenuManager : MonoBehaviour
             Screen.SetResolution(915 , 412 , true);
         }
 
-        //playerMoney = PlayerPrefs.GetInt("Score" , playerMoney);
+        if (PlayerPrefs.HasKey("Score"))
+        {
+            playerMoney = PlayerPrefs.GetInt("Score", playerMoney);
+        }
 
     }
 
