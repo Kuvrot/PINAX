@@ -34,6 +34,9 @@ public class MenuManager : MonoBehaviour
         {
             Screen.SetResolution(915 , 412 , true);
         }
+
+        //playerMoney = PlayerPrefs.GetInt("Score" , playerMoney);
+
     }
 
     // Update is called once per frame
@@ -95,9 +98,7 @@ public class MenuManager : MonoBehaviour
     //Settings
     public void SetQuality(int n)
     {
-
         QualitySettings.SetQualityLevel(n);
-
     }
 
     public void Resolution (int n){
@@ -108,12 +109,6 @@ public class MenuManager : MonoBehaviour
                 Screen.SetResolution(1280 , 720, fullScreen.isOn); break;
             case 1:
                 Screen.SetResolution(1920, 1080, fullScreen.isOn); break;
-
         }
-
     }
-
-
-
-
 }

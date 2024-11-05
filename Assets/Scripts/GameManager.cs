@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public bool gameStarted = false;
     public float spawnRate = 10;
     public float obstacleSpeed = 50;
-    public float score;
+    public int score;
     public int HP = 3;
     public GameObject ObstacleSpawner;
     public GameObject startMessage;
@@ -141,10 +141,10 @@ public class GameManager : MonoBehaviour
     {
 
         particles[1].Play();
-        Player.GetComponent<ShipController>().ship.GetComponentInChildren<MeshRenderer>().enabled = false;
-           
+        Player.GetComponent<ShipController>().ship.GetComponentInChildren<MeshRenderer>().enabled = false;   
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetInt("Score" , score);
+        SceneManager.LoadScene("MainMenu");
         StopAllCoroutines();
 
 

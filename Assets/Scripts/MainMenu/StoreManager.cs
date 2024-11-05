@@ -58,18 +58,30 @@ public class StoreManager : MonoBehaviour
 
             if (shipCost[shipIndex] == 0)
             {
-                if (!MenuManager.languageChange)
+                if (shipIndex == selectedShip)
                 {
-                    shipCostUI.text = "YA LO TIENES";
+                    if (!MenuManager.languageChange)
+                    {
+                        shipCostUI.text = "SELECCIONADA";
+                    }
+                    else
+                    {
+                        shipCostUI.text = "SELECTED";
+                    }
                 }
                 else
                 {
-                    shipCostUI.text = "ALREADY OWNED";
+                    if (!MenuManager.languageChange)
+                    {
+                        shipCostUI.text = "YA LO TIENES";
+                    }
+                    else
+                    {
+                        shipCostUI.text = "ALREADY OWNED";
+                    }
                 }
-
                 select.SetActive(true);
                 buy.SetActive(false);
-
             }
             else
             {
@@ -107,5 +119,6 @@ public class StoreManager : MonoBehaviour
     public void Select()
     {
         selectedShip = shipIndex;
+        ChangeShip();
     }
 }

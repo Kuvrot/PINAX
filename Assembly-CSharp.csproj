@@ -62,6 +62,7 @@
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
     <Compile Include="Assets\Scripts\ShipController.cs" />
     <Compile Include="Assets\Scripts\Spawners\ObstacleSpawner.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\StoreManager.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_DissolveOverTime.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
     <Compile Include="Assets\Scripts\Options.cs" />
@@ -76,7 +77,6 @@
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Table.cs" />
-    <Compile Include="Assets\Scripts\MainMenu\StoreManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Edge Detection.shader" />
