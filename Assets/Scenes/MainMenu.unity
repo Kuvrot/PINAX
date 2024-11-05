@@ -4783,7 +4783,7 @@ MonoBehaviour:
   - {fileID: 592276269}
   - {fileID: 2125492886}
   - {fileID: 195169026}
-  shipCost: 00000000f4010000e8030000
+  shipCost: 00000000fa000000f4010000
   shipCostUI: {fileID: 980952199}
   expo_rotation: {fileID: 119287644}
   select: {fileID: 1365164350}

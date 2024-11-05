@@ -463,6 +463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c2ffda859eb044fb20ec6b0cc5cf32, type: 3}
+--- !u!1 &185166796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 17c2ffda859eb044fb20ec6b0cc5cf32, type: 3}
+  m_PrefabInstance: {fileID: 185166795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &205940340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,6 +642,11 @@ PrefabInstance:
 --- !u!4 &208139235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: faebc005a2c98934ebf51e2c300225ac, type: 3}
+  m_PrefabInstance: {fileID: 208139234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &208139236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: faebc005a2c98934ebf51e2c300225ac, type: 3}
   m_PrefabInstance: {fileID: 208139234}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &210405939 stripped
@@ -1960,6 +1970,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4297e581fd8392d448725bd5b39689a8, type: 3}
+--- !u!1 &635879359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4297e581fd8392d448725bd5b39689a8, type: 3}
+  m_PrefabInstance: {fileID: 635879358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &645780709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2969,6 +2984,11 @@ MonoBehaviour:
   - {fileID: 1182701000}
   - {fileID: 701999835}
   ship: {fileID: 603417748}
+  shipIndex: 0
+  shipViewModels:
+  - {fileID: 208139236}
+  - {fileID: 635879359}
+  - {fileID: 185166796}
 --- !u!95 &963194230
 Animator:
   serializedVersion: 5
@@ -6032,7 +6052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198560391382707886, guid: b291ea73a9cdfe84780dac6d477fc2ad, type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198560391382707886, guid: b291ea73a9cdfe84780dac6d477fc2ad, type: 3}
       propertyPath: InitialModule.maxNumParticles

@@ -119,6 +119,7 @@ public class StoreManager : MonoBehaviour
     public void Select()
     {
         selectedShip = shipIndex;
+        PlayerPrefs.SetInt("SelectedShip" , selectedShip);
         ChangeShip();
     }
 }

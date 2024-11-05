@@ -29,6 +29,11 @@ public class ShipController : MonoBehaviour
     {
         anim = ship.GetComponent<Animator>();
         Cursor.visible = false;
+
+        if (PlayerPrefs.HasKey("SelectedShip"))
+        {
+            shipIndex = PlayerPrefs.GetInt("SelectedShip");
+        }
         
         foreach (GameObject spaceship in shipViewModels)
         {
