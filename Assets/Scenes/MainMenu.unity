@@ -2083,7 +2083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6650944, b: 0.9605993, a: 0.2}
+  m_Color: {r: 1, g: 0.6650944, b: 0.9605993, a: 0.15686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4746,6 +4746,7 @@ MonoBehaviour:
   phoneMode: 1
   playerMoney: 0
   playerMoneyUI: {fileID: 224877960}
+  deletePlayerPrefs: 0
 --- !u!224 &1110828867
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7661,7 +7662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.14818442, b: 0.2830189, a: 0.34901962}
+  m_Color: {r: 0.2830189, g: 0.14818442, b: 0.2830189, a: 0.15686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8266,6 +8267,7 @@ MonoBehaviour:
   phoneMode: 0
   playerMoney: 0
   playerMoneyUI: {fileID: 0}
+  deletePlayerPrefs: 0
 --- !u!1 &2084568629
 GameObject:
   m_ObjectHideFlags: 0

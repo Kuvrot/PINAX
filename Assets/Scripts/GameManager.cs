@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
     //[HideInInspector]
     public float Clock = 0;
 
+    private bool pause = false;
+    public GameObject pauseScreen;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -91,10 +94,20 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && pause)
         {
-            SceneManager.LoadScene(0);
+            pause = false;
+            pauseScreen.SetActive(pause);
+            Time.timeScale = 1;
         }
+        else if(Input.GetKeyDown(KeyCode.Escape) && !pause)
+        {
+            pause = true;
+            pauseScreen.SetActive(pause);
+            Time.timeScale = 0;
+        }
+
+        
 
         //Cheats
         if (Input.GetKeyDown(KeyCode.K))
