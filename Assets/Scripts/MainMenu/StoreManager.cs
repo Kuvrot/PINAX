@@ -134,6 +134,10 @@ public class StoreManager : MonoBehaviour
                 PlayerPrefs.SetInt("Third", 1);
             }
 
+            if (PlayerPrefs.HasKey("Score"))
+            {
+                PlayerPrefs.SetInt("Score", menuManager.playerMoney);
+            }
             ChangeShip();
         }
     }

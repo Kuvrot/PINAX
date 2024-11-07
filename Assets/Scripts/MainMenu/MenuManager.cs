@@ -39,7 +39,7 @@ public class MenuManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey("Score"))
         {
-            playerMoney = PlayerPrefs.GetInt("Score", playerMoney);
+            playerMoney = PlayerPrefs.GetInt("Score");
         }
 
         if (deletePlayerPrefs)
