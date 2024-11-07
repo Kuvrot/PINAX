@@ -18,6 +18,8 @@ public class MenuManager : MonoBehaviour
     public int playerMoney = 1;
     public Text playerMoneyUI;
 
+    public bool deletePlayerPrefs;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,11 @@ public class MenuManager : MonoBehaviour
         if (PlayerPrefs.HasKey("Score"))
         {
             playerMoney = PlayerPrefs.GetInt("Score", playerMoney);
+        }
+
+        if (deletePlayerPrefs)
+        {
+            PlayerPrefs.DeleteAll();
         }
 
     }

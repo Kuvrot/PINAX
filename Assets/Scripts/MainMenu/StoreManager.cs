@@ -26,6 +26,17 @@ public class StoreManager : MonoBehaviour
     void Start()
     {
         menuManager = GetComponent<MenuManager>();
+
+       if (PlayerPrefs.HasKey("Second"))
+        {
+            shipCost[1] = 0;
+        }
+
+        if (PlayerPrefs.HasKey("Third"))
+        {
+            shipCost[2] = 0;
+        }
+
         ChangeShip();
     }
 
@@ -112,6 +123,17 @@ public class StoreManager : MonoBehaviour
         {
             menuManager.playerMoney -= shipCost[shipIndex];
             shipCost[shipIndex] = 0;
+            
+            if (shipIndex == 1)
+            {
+                PlayerPrefs.SetInt("Second" , 1);
+            }
+
+            if (shipIndex == 2)
+            {
+                PlayerPrefs.SetInt("Third", 1);
+            }
+
             ChangeShip();
         }
     }
