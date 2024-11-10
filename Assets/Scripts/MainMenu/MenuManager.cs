@@ -13,16 +13,19 @@ public class MenuManager : MonoBehaviour
     public Toggle fullScreen;
     public GameObject[] screens;
 
-    public bool phoneMode = false;
+    public static bool phoneMode = false;
+    public bool _phoneMode = false;
 
     public int playerMoney = 1;
     public Text playerMoneyUI;
 
-    public bool deletePlayerPrefs;
+    public bool deletePlayerPrefs = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        phoneMode = _phoneMode;
+
         Buttons = GameObject.FindObjectsOfType<Button_Text>();
 
         foreach (GameObject obj in screens)
