@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     private bool pause = false;
     public GameObject pauseScreen;
+    public GameObject pauseButton;
 
     // Start is called before the first frame update
     void Awake()
@@ -49,6 +50,15 @@ public class GameManager : MonoBehaviour
         score = 0;
         table = Table.table;
         fixedTable = Table.fixedTable;
+
+        if (MenuManager.phoneMode)
+        {
+            pauseButton.SetActive(true);
+        }
+        else
+        {
+            pauseButton.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -154,5 +164,27 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene("MainMenu");
         StopAllCoroutines();
+    }
+
+    public void GoToMainMenu ()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+
+    public void PauseBtn()
+    {
+        if (pause)
+        {
+            pause = false;
+            pauseScreen.SetActive(pause);
+            Time.timeScale = 1;
+        }
+        else
+        {
+            pause = true;
+            pauseScreen.SetActive(pause);
+            Time.timeScale = 0;
+        }
     }
 }
