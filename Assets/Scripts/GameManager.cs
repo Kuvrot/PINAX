@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject pauseButton;
 
+    public bool phoneMode = false;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -51,7 +53,7 @@ public class GameManager : MonoBehaviour
         table = Table.table;
         fixedTable = Table.fixedTable;
 
-        if (MenuManager.phoneMode)
+        if (phoneMode)
         {
             pauseButton.SetActive(true);
         }

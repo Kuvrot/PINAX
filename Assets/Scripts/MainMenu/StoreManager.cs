@@ -148,4 +148,9 @@ public class StoreManager : MonoBehaviour
         PlayerPrefs.SetInt("SelectedShip" , selectedShip);
         ChangeShip();
     }
+
+    public void MoneyCheat()
+    {
+        menuManager.playerMoney += 2000;
+    }
 }

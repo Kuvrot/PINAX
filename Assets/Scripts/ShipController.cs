@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class ShipController : MonoBehaviour
 {
@@ -41,6 +42,15 @@ public class ShipController : MonoBehaviour
         }
 
         shipViewModels[shipIndex].SetActive(true);
+
+        if (QualitySettings.GetQualityLevel() == 5)
+        {
+            GetComponent<PostProcessVolume>().enabled = true;
+        }
+        else
+        {
+            GetComponent<PostProcessVolume>().enabled = false;
+        }
 
     }
 
