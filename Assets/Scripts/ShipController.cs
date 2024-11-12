@@ -84,7 +84,7 @@ public class ShipController : MonoBehaviour
 
             new Vector3(
                 positions[currentPosition].position.x , 
-                ship.transform.position.y + interpolation, 
+                -5.71f + interpolation, 
                 ship.transform.position.z), 
 
             shipSpeed * Time.deltaTime);
