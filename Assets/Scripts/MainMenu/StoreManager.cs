@@ -153,4 +153,9 @@ public class StoreManager : MonoBehaviour
     {
         menuManager.playerMoney += 2000;
     }
+
+    public void ResetGameProgress ()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
