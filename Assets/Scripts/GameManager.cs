@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
             if (Clock < 300)
             {
                 Clock += 1 * Time.deltaTime;
-                spawnRate = -0.0085f * Clock + 5;
+                spawnRate = -0.0085f * Clock + 4.5f;
 
             }else
             {

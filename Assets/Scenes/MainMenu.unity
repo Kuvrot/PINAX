@@ -3189,7 +3189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &793602208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5132,7 +5132,7 @@ MonoBehaviour:
   screens:
   - {fileID: 2090491307}
   - {fileID: 465510086}
-  _phoneMode: 0
+  _phoneMode: 1
   playerMoney: 0
   playerMoneyUI: {fileID: 224877960}
   deletePlayerPrefs: 0
